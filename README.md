@@ -1,5 +1,8 @@
 # html2rtf
 
+Convert html code to rtf file.
+
+forked from <a href="https://www.npmjs.com/package/html2rtf">html2rtf</a>
 
 ## install
 
@@ -12,14 +15,14 @@ or
 ```javascript
 const html2rtf = require('html2rtf');
 const path = require('path');
-const filename = path.join(__dirname,'example.rtf');
+const filename = path.join(__dirname, 'example.rtf');
 const html = `<div>
     <p>Welcome to RTF!</p>
     <p>This is a example</p>
 </div>`;
-html2rtf(html,filename).then(res=>{
+html2rtf(html, filename).then(res => {
     console.log('done')
-}).catch(e=>{
+}).catch(e => {
     console.log(e)
 })
 ```
